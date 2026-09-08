@@ -78,7 +78,7 @@ A reproducible analysis may require code that the final reader does not need to 
 
 For example, a setup chunk that loads packages and imports data may need to run for reproducibility but may not need to appear in an audience-facing report.
 
-```{r chunk-options-demo, message=FALSE, warning=FALSE, include=FALSE}
+```{r chunk-options-demo, echo=FALSE, message=FALSE, warning=FALSE}
 # Example only -- experiment with these options in the chunk header.
 x <- 1
 y <- 13
