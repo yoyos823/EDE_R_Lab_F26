@@ -38,7 +38,7 @@ vector1 <- c(1,2,5.3,6,-2,4) # Vector type: Numeric
 vector1
 class(vector1)
 
-vector2 <- c("one","two","three") # Vector type: ca
+vector2 <- c("one","two","three") # Vector type: Factor
 vector2
 
 vector3 <- c(TRUE,TRUE,TRUE,FALSE,TRUE,FALSE) # Vector type: Logistic
