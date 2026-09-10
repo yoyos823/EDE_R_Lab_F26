@@ -52,11 +52,11 @@ here()
 setwd(here())
 
 #Arguments in the `here()` command allow easy navigation within subfolders
-filename <- here('Data','Raw','USGS_Site02085000_Flow_Raw.csv')
+filename <- here('Data','Raw','USGS_Site02085000_Flow_raw.csv')
 print(filename)
 
 #Or
-filename <- here("Data/Raw/USGS_Site02085000_Flow_Raw.csv")
+filename <- here("Data/Raw/USGS_Site02085000_Flow_raw.csv")
 print(filename)
 
 #See whether the file exists
@@ -64,7 +64,7 @@ file.exists(filename)
 
 #A tidied read.csv command
 usgs_flow_data <- read.csv(
-  file = here('Data','Raw','USGS_Site02085000_Flow_Raw.csv')
+  file = here('Data','Raw','USGS_Site02085000_Flow_raw.csv')
 )
 
 #Create and print a list of all files in a folder using "dir" and "here"
@@ -111,9 +111,9 @@ Remember formatting of dates in R:
 # (code must be uncommented)
 today <- Sys.Date()
 format(today, format = "%B")
-#format(today, format = "")
-#format(today, format = "")
-#format(today, format = "")
+format(today, format = "%b")
+format(today, format = "%Y")
+format(today, format = "%d")
 
 ```
 
@@ -128,7 +128,7 @@ More info on lubridate [here][<https://cran.r-project.org/web/packages/lubridate
 library(lubridate)
 
 #Ex1
-str_today <- "2026-sep-10"
+str_today <- "2026-sep-10" # %Y-%b-%d
 #Since the format is year-month-day we will use function ymd()
 date_obj_today <- ymd(str_today)
 date_obj_today
