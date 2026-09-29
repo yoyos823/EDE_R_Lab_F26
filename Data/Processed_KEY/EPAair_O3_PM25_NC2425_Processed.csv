@@ -1,4 +1,4 @@
-"Date","Local.Site.Name","County","meanlatitude","meanlongitude","Month","Year","PM2.5","Ozone"
+"Date","Local.Site.Name","County","latitude","longitude","Month","Year","AQI_PM2.5","AQI_Ozone"
 2024-01-01,"Bryson City","Swain",35.434767,-83.442133,1,2024,43,NA
 2024-01-01,"Castle Hayne","New Hanover",34.364167,-77.838611,1,2024,44.5,NA
 2024-01-01,"Clemmons Middle","Forsyth",36.026612,-80.341962,1,2024,47.5,NA

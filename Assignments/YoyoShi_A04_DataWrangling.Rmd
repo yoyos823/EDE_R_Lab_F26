@@ -163,7 +163,7 @@ colnames(EPAair_PM25_NC2024_processed)
 EPAair_combined <- bind_rows(EPAair_O3_NC2024_processed,
                              EPAair_O3_NC2025_processed,
                              EPAair_PM25_NC2024_processed,
-                             EPAair_PM25_NC2024_processed)
+                             EPAair_PM25_NC2025_processed)
 EPAair_combined$Local.Site.Name <- as.factor(EPAair_combined$Local.Site.Name) 
 ```
 
